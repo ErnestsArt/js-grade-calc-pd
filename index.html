@@ -78,10 +78,10 @@ Zem vēstures ir jāizvada visu ierakstu vidējais rezultāts procentos. -->
             }
 
             const grade = "";
-            if (gradingScheme === "procenti") {
+            if (gradingScheme === "percentage") {
                 const percentage = (points / maxPoints) * 100;
                 grade = `Jūsu procentuālā vērtība ir: ${percentage.toFixed(2)}%`;
-            } else if (gradingScheme === "burti") {
+            } else if (gradingScheme === "letter") {
                 if (points >= 90) {
                     grade = "Jūsu burtu vērtējums ir: A";
                 } else if (points >= 80) {
@@ -100,12 +100,12 @@ Zem vēstures ir jāizvada visu ierakstu vidējais rezultāts procentos. -->
 
         calculateBtn.addEventListener("click", handleClick);
 
-        function Calculate(){
+        function Calculate() {
 
         }
 
-        function Validate(){
-            
+        function Validate() {
+
         }
         //   === TERMINI un KODA PIEMĒRI ===
         // input, button, id, class, script, const, let, document, querySelector, getElementById,
