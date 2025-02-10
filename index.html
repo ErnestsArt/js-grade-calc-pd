@@ -63,8 +63,8 @@ Zem vēstures ir jāizvada visu ierakstu vidējais rezultāts procentos. -->
 
         function handleClick() {
             const name = nameInput.value;
-            const points = parseFloat(pointsInput);
-            const maxPoints = parseFloat(maxPointsInput);
+            const points = parseFloat(pointsInput.value);
+            const maxPoints = parseFloat(maxPointsInput.value);
             const gradingScheme = gradingSchemeSelect.value;
 
             // Validate inputs
@@ -73,8 +73,7 @@ Zem vēstures ir jāizvada visu ierakstu vidējais rezultāts procentos. -->
                 return;
             }
             if (points < 0 || points > maxPoints) {
-                resultDiv.innerHTML =
-                    "Iegūtie punkti nedrīkst pārsniegt maksimālos punktus.";
+                resultDiv.innerHTML = "Iegūtie punkti nedrīkst pārsniegt maksimālos punktus.";
                 return;
             }
 
